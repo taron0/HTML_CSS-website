@@ -6,19 +6,18 @@
   list-style: none;
   box-sizing: border-box;
 }
-body {
-}
+
 /* Navbar Settings*/
 nav {
-    background: #74ebd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   height: 60px;
   width: 100%;
 }
 lable.logo {
-  color: black;
+  color: whitesmoke;
   font-size: 28px;
   line-height: 60px;
   padding: 0 100px;
@@ -39,14 +38,14 @@ nav ul li {
   justify-content: center;
 }
 nav ul li a {
-  color: black;
+  color: whitesmoke;
   font-size: 14px;
   text-transform: uppercase;
   padding: 21px 15px 20px 15px;
 }
 a.active,
 a:hover {
-  background: #E5B8DA;
+  background: #005D5D;
   transition: 0.5s;
 }
 
@@ -60,7 +59,7 @@ a:hover {
 }
 .dropDown-content {
   display: none;
-  background-color: #75E5CB;
+  background-color: #632213;
   position: absolute;
   top: 38px;
   left: 0px;
@@ -68,7 +67,7 @@ a:hover {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.175);
 }
 .dropDown-content li a {
-  color: black;
+  color: whitesmoke;
   display: block;
 }
 
@@ -78,7 +77,7 @@ a:hover {
 /* Header Settings*/
 header {
   margin: 25px 100px;
-  background-color: #75E5CB;
+  background-color: #632213;
   height: 500px;
 }
 
@@ -113,7 +112,10 @@ section {
   
   section .leftBox .content {
     color: #fff;
-    background-color: #79E1E5;
+    background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding: 40px;
     transition: 0.5s;
   }
@@ -137,10 +139,11 @@ section {
   section .events {
     grid-area: event;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    background: #00c3ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 96%;
     box-sizing: border-box;
   }
   
@@ -249,4 +252,78 @@ background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, F
       }
     
   }
+
+
   
+.our-work {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.our-work .heading h1 {
+  font-size: 50px;
+
+  font-weight: bold;
+  opacity: 0.5;
+  color:black;
+  margin-bottom: -55px;
+  margin: 0 auto;
+  font-family: 'Tangerine', cursive;
+}
+.our-work .wrapper-box .row {
+  display: table;
+  width: 100%;
+}
+
+.our-work .wrapper-box .text-box,.wrapper-box .image-box {
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #72E9E9;
+  font-size:30px;
+  
+}
+
+.our-work .wrapper-box .image-box img {
+  height: auto;
+  width: 100%;
+  min-height: 300px;
+  float: right;
+  object-fit: cover;
+}
+
+.our-work .wrapper-box .text-box p {
+  padding: 0px 30px;
+  height: 100%;
+  text-align: left;
+}
+
+.our-work .wrapper-box .row:nth-child(odd) {
+  direction: rtl;
+}
+
+.container{
+margin:0 auto; 
+}
+@media (min-width: 768px) {
+  .container {
+      width:750px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width:970px
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+      width:1292px;
+      padding: 0;
+     
+  }
+}
+
