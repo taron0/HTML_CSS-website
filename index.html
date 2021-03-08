@@ -1,96 +1,214 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu with Search Box | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-	<nav>
-		<lable class="logo"><img src="img/logo.png" alt="" srcset=""></lable>
-		<ul class="menu-website">
-		  <li><a class="active" href="#">ГЛАВНАЯ</a></li>
-		  <li><a href="#">НАШИ РАБОТЫ</a></li>
-		  <div class="dropDown">
-			<li><a href="#">Услуги&#9660;</a></li>
-			<div class="dropDown-content">
-			  <li class="dropItem"><a href="#">Стрижкиё&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			</a></li>
-			  <li class="dropItem"><a href="#">Усы и борода
-			</a></li>
-			  <li class="dropItem"><a href="#">Королевское бритьё&nbsp;&nbsp;&nbsp;</a></li>
-			  <li class="dropItem"><a href="#">Посмотреть все</a></li>
-			</div>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">BarberShop</a></div>
+        <ul class="links">
+          <li><a href="#">ГЛАВНАЯ</a></li>
+          <li><a href="#">
+			БЛОГ</a></li>
+          <li>
+            <a href="#" class="desktop-link">УСЛУГИ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">УСЛУГИ</label>
+            <ul>
+              <li><a href="#">МУЖСКИЕ
+				СТРИЖКИ</a></li>
+              <li><a href="#">СТРИЖКА УСОВ
+				И БОРОДЫ</a></li>
+              <li><a href="#">БРИТЬЁ
+				БОРОДЫ И ГОЛОВЫ</a></li>
+              <li><a href="#">НАНЕСЕНИЕ
+				ТАТУИРОВОК</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">
+				ИНВЕСТИЦИИ</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">ИНВЕСТИЦИИ</label>
+            <ul>
+              <li><a href="#">ОБЪЁМ </a></li>
+              <li><a href="#">БИЗНЕСЕ</a></li>
+              <li><a href="#">УЧАСТИЕ</a></li>
+              <li>
+                <a href="#" class="desktop-link">Больше</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">Больше</label>
+                <ul>
+                  <li><a href="#">Популярна</a></li>
+                  <li><a href="#">прическа </a></li>
+                  <li><a href="#">
+					ВАКАНСИИ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">ЗАПИСАТЬСЯ</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  		<div class="main">
+			  <main class="grid">
+				  <article>
+					  <img src="img/grid3.jpg" alt="" srcset="">
+					  <div class="grid-text">
+						  <h3>МУЖСКИЕ
+							СТРИЖКИ</h3>
+						  <p>Прически для мужчин имеют великое многообразие. Выбрав подходящую стрижку, каждый может отразить свой образ жизни и характер, ведь стильная стрижка — одна из ключевых деталей повседневного образа, наряду с костюмом по фигуре, качественной обувью и ароматом духов. </p>
+						  <button>Узнать больше </button>
+					  </div>
+				  </article>
+				  <article>
+					<img src="img/grid1.jpg" alt="" srcset="">
+					<div class="grid-text">
+						<h3>СТРИЖКА УСОВ
+							И БОРОДЫ</h3>
+						<p>Борода и усы для мужчины важная особенность издревле. И если вы думаете, что «отпустить бороду» или «отрастить усы» — значит просто дать волосам на лице расти как они хотят, то вы сильно ошибаетесь. За ними нужен особый уход как ежедневный, так и профессиональный.</p>
+						<button>Узнать больше </button>
+					</div>
+				</article>
+				<article>
+					<img src="img/grid2.jfif" alt="" srcset="">
+					<div class="grid-text">
+						<h3>БРИТЬЁ
+							БОРОДЫ И ГОЛОВЫ</h3>
+						<p>В отличие от «Королевского бритья» классическое бритье осуществляется двумя инструментами в два приёма: машинкой для бритья или шаветкой; сначала по направлению, а затем против направления роста волос, обеспечивая таким образом максимально гладкую кожу.БОРОДЫ И ГОЛОВЫ</p>
+						<button>Узнать больше </button>
+					</div>
+				</article> 
+				<article>
+					<img src="img/barber1.jpg" alt="" srcset="">
+					<div class="grid-text">
+						<h3>КОМПЛЕКСНЫЙ УХОД</h3>
+						<p>Иными словами, стоимость услуги обсуждается индивидуально с тату-мастером на бесплатной консультации. Он обязательно проконсультирует вас по всем видам тату-искусства, поможет определиться со стилистическим направлением, профессионально подберет цвет и.</p>
+						<button>Узнать больше </button>
+					</div>
+				</article>
+				<article>
+					<img src="img/box10.jpg" alt="" srcset="">
+					<div class="grid-text">
+						<h3>НАНЕСЕНИЕ
+							ТАТУИРОВОК</h3>
+						<p>Решиться на татуировку — смелый поступок, но он должен быть обдуманным и согласованным с вашим внутренним «Я». Есть также еще один важный аспект: санитарные нормы тату-салона, безопасность, стерильность и портфолио мастера</p>
+						<button>Узнать больше </button>
+					</div>
+				</article>
+				<article>
+					<img src="img/box4.jfif" alt="" srcset="">
+					<div class="grid-text">
+						<h3>КОРОЛЕВСКОЕ
+							БРИТЬЕ</h3>
+						<p>В специальном паровом шкафу ждут своего времени разогретые махровые полотенца. Идеально подобранная температура и влажность не нанесут вашей коже ожогов или дискомфорта, но подготовят бороду к бритью.</p>
+						<button>Узнать больше </button>
+					</div>
+				</article>
+				<article>
+					<img src="img/box5.jpg" alt="" srcset="">
+					<div class="grid-text">
+						<h3>Crop cut</h3>
+						<p>Тату кабинеты оснащены последними технологиями, соответствуют всем санитарно-гигиенические нормы и имеют лицензии. В своей работе мастера используют современное оборудование, качественные краски и одноразовые расходные материалы.</p>
+						<button>Узнать больше </button>
+					</div>
+				</article>
+				<article>
+					<img src="img/barber10.jfif" alt="" srcset="">
+					<div class="grid-text">
+						<h3>БАРБЕР–SPA</h3>
+						<p>Во-вторых, мужская косметика премиум-класса от "Truefitt & Hill". Это по-настоящему элитные средства для бритья и ухода за кожей. Масла, мыло и бальзамы высочайшего качества на основе проверенных за два века рецептов, и с применением самых современных технологий.</p>
+						<button>Узнать больше </button>
+					</div>
+				</article>
+		
+			  </main>
+
 		  </div>
-		  <li><a href="#">ЗАПИСАТЬСЯ</a></li>
-		  <div class="dropDown">
-			<li><a href="#">Более &#9660;</a></li>
-			<div class="dropDown-content">
-			  <li class="dropItem"><a href="#">АДРЕС&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-			  <li class="dropItem"><a href="#">ВХОД&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </a></li>
-			</div>
 	
-		  </div>
-		</ul>
-	  </nav>
-	  <section>
-		<div class="leftBox">
-		  <div class="content">
-			<h1>ВИДЫ ФЭЙДА И ИНСТРУМЕНТЫ ДЛЯ ВЫПОЛНЕНИЯ</h1>
-			<p>Виды Фэйда можно различить по зонам перехода от коротких волос к более длинным. Всего их 5, но миксовать их между собой никто не запрещает.На данный момент многие парни и мужчины выбирают стрижки с техникой . Это красиво визуально и практично в повседневной жизни: как минимум на укладку височной части вы сэкономите огромное количество времени и средств, так как она будет в идеальном состоянии после стрижки около 2-3 недель. Выбор многих и универсальность этой техники очевидны: нечеткий переход от коротких волос на затылке до любой длины на макушке, которая и составляет уже саму стрижку.</p>
-		  </div>
-		  <br /> <br /> <br />
-		  <div class="content">
-			<h1>ЗНАМЕНИТОСТИ СПОРТА ПРЕДПОЧИТАЮТ ТЕХНИКУ ФЭЙД</h1>
-			<p><img src="img/t.jpg" alt="" srcset="" class="sport-hairs"></p>
-		  </div>
+	
+  <footer>
+	<div class="container">
+		<div class="footer-content">
+			<div class="items">
+				<a href="#" class="logo">BarberShop</a>  
+				<p> 280 ФИЛИАЛОВ В 14 СТРАНАХ И 9 СТОЛИЦАХ.УПНЕЙШАЯ МЕЖДУНАРОДНАЯ СЕТЬ МУЖСКИХ ПАРИКМАХЕРСКИХ
+
+					Oldboy Barbershop — намного больше, чем просто мужская парикмахерская, это даже больше, чем мужской клуб по интересам, это именно то место, где ты найдёшь себя и свой стиль.</p>
+				<div class="social">
+				
+				</div>
+			</div>
+			<div class="items">
+				<h3> Меню</h3>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Инвестиции
+					</a></li>
+					<li><a href="#">Франшиза</a></li>
+
+				</ul>                          
+			</div>
+
+			<div class="items">
+				<h3>Услуги</h3>
+			<ul>
+				<li><a href="#">>МУЖСКИЕ
+					СТРИЖКИ</a></li>
+				<li><a href="#">ТРИЖКА УСОВ
+					И БОРОДЫ</a></li>
+				<li><a href="#">БРИТЬЁ
+					БОРОДЫ И ГОЛОВЫ</a></li>
+				<li><a href="#">НАНЕСЕНИЕ
+					ТАТУИРОВОК</a></li>
+			</ul>
+			</div>
+			<div class="items">
+				<h3>Больше</h3>
+				<ul>
+					<li><a href="#">Популярна</a></li>
+					<li><a href="#">ВАКАНСИИ</a></li>
+					<li><a href="#">ВАКАНСИИ</a></li>
+				</ul>
+			</div>
+			<div class="items">
+				<h3>Контакти</h3>
+				<ul>
+					<li><a href="#"><img src="img/free-icon-facebook-1312139.png" alt="" srcset=""></a></li>
+					<li><a href="#"><img src="img/free-icon-youtube-185983.png" alt="" srcset=""></a></li>
+					<li><a href="#"><img src="img/free-icon-instagram-733558.png" alt="" srcset=""></a></li>
+					<li><a href="#"><img src="img/gmail.png" alt="" srcset=""></a></li>
+					<li><a href="#"><img src="img/twitter.png" alt="" srcset=""></a></li>
+					<li><a href="#"><img src="img/email.png" alt="" srcset=""></a></li>
+					
+				</ul>
+			</div>
 		</div>
-		<div class="events">
-		  <ul>
-			<li>
-			  <div class="time">
-				<h2><img src="img/f.png" class="mens-haircut"></span></h2>
-			  </div>
-			  <div class="details">
-				<h3>Стрижка у нас
-					это выгодно!</h3>
-				<p>Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-				<a href="">Узнать больше</a>
-			  </div>
-			  <div style="clear: both;"></div>
-			</li>
-			<li>
-			  <div class="time">
-				<h2><img src="img/images.jfif" alt="" srcset="" class = "mens-haircut"></h2>
-			  </div>
-			  <div class="details">
-				<h3>СРЕДНИЙ ИЛИ КЛАССИЧЕСКИЙ ФЕЙД</h3>
-				<p>Если вам нравится небольшая небрежность, этот вариант для вас. С помощью ножниц и расчески в руках умелого мастера можно придать стрижке такую форму, что она подойдет любому типу лица. Четкости и резких переходов нет.</p>
-				<a href="">Узнать больше</a>
-			  </div>
-			  <div style="clear: both;"></div>
-			</li>
-			<li>
-			  <div class="time">
-				<h2><img src="img/w.jfif" alt="" srcset="" class = "mens-haircut"></h2>
-			  </div> 
-			  <div class="details">
-				<h3>Where does it come from</h3>
-				<p>Наверное самый популярный в этом сезоне. При таком выборе короткие волосы ниже середины головы плавно переходят в стрижку «под ноль». Схожа с Андеркатом, но различается плавностью перехода на висках. Отлично сочетается с бородой.</p>
-				<a href="">Узнать больше</a>
-			  </div>
-			  <div style="clear: both;"></div>
-			</li>
-		  </ul>
-		</div>
-	  </section>
-	  <br /> <br /><br />
-	  
+		<hr>
+		<p class="end"> © 2020 Grigoryan Taron</p>
+	</div>
+</footer>  
+
 </body>
 </html>
+
