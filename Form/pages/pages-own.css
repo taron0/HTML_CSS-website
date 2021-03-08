@@ -1,8 +1,37 @@
 .text-contnen {
+    
     text-align: center;
     width: 750px;
     margin: 0 auto;
     border-radius: 10px;
     background-color:#3A3B63 ;
     color: ivory;
+}
+@media (max-width:845px){
+    .text-contnen {
+        width: 500px;
+    }
+}
+
+@media (max-width:557px){
+    .text-contnen {
+        width: 300px;
+    }
+}
+
+@media (max-width:337px){
+    .text-contnen {
+        width: 200px;
+    }
+}
+
+.img-aside img {
+    width: 400px;
+    height: 600px;
+}
+
+.section-text-conten{
+    margin: 0;
+    left: 0;
+    padding: 0;
 }

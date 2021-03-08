@@ -120,9 +120,22 @@ form .input-box span.details{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
- @media(max-width: 584px){
+  /* @media(max-width: 1000px){
+    .form-container .content {
+
+      flex-direction: column;
+    }
+ 
+   } */
+ @media(max-width: 1051px){
  .form-container{
-  max-width: 100%;
+  flex-direction: column;
+}
+
+@media(min-width: 459px){
+  .form-container .content .category{
+    flex-direction: column;
+  }
 }
 form .user-details .input-box{
     margin-bottom: 15px;
@@ -139,8 +152,4 @@ form .user-details .input-box{
     width: 5px;
   }
   }
-  @media(max-width: 459px){
-  .form-container .content .category{
-    flex-direction: column;
-  }
-}
+ 
