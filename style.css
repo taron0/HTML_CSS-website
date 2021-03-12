@@ -560,3 +560,53 @@ svg{
 	opacity: 1;
   }
   
+
+
+  .text-contnen {
+    
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color:#3A3B63 ;
+    color: ivory;
+}
+
+.img-aside img {
+    width: 400px;
+    height: 600px;
+}
+
+.section-text-conten{
+    margin: 0;
+    left: 0;
+    padding: 0;
+}
+.spinner {
+    width: 10em;
+    height: 10em;
+    border-top: 1em solid #d5fff7;
+    border-right: 1em solid transparent;
+    animation: spinner 0.4s linear infinite;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .head {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-left: 8.5em;
+    margin-top: 0.5em;
+    background-color: #d5fff7;
+  }
+
+  .section-text-conten {
+
+      background: #3A3B63;
+      padding: 50px;
+      
+  } 
+
+  .section-text-conten-container{
+      padding:50px 200px;
+  }
