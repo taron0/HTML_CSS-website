@@ -26,8 +26,8 @@
 
 - Metatags (in head section)
 
-      + og tags
-      + other meta information about your site
+      - og tags
+      - other meta information about your site
 - Semantic tags(header, footer, nav, main)
 - Grid
 - ...
