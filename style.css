@@ -193,7 +193,27 @@ nav .content .links {
 	}
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 1056px) {
+	.wrapper nav {
+		max-width: 100%;
+		padding: 0 10px;
+	}
+	nav .content .links {
+		margin-left: 20px;
+	}
+	.content .links li a {
+		padding: 5px 9px;
+	}
+	.wrapper .search-box {
+		max-width: calc(100% - 200px);
+	}
+	.wrapper .search-box input {
+		padding: 0 100px 0 15px;
+	}
+} */
+
+
+@media screen and (max-width: 1056px) {
 	.wrapper .menu-icon {
 		display: block;
 	}
