@@ -607,6 +607,13 @@ svg{
       
   } 
 
-  .section-text-conten-container{
-      padding:50px 200px;
+  .img-container-works > article {
+	  width: 300px;
+	  height: 300px;
   }
+.img-container-works {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+	
+}
